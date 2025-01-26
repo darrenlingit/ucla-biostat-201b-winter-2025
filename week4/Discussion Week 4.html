@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Discussion Week 4</title>
+<title>discussion-week-4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,10 +63,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="Discussion Week 4_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="Discussion Week 4_files/libs/quarto-html/anchor.min.js"></script>
 <link href="Discussion Week 4_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Discussion Week 4_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="Discussion Week 4_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="Discussion Week 4_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Discussion Week 4_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Discussion Week 4_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="Discussion Week 4_files/libs/bootstrap/bootstrap-81e35ebdb4125010edbabe6010586085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -66,33 +100,91 @@ window.Quarto = {
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Discussion-Week-4.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Discussion Week 4</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="problem-1" class="level4">
-<h4 class="anchored" data-anchor-id="problem-1">Problem 1</h4>
+<section id="problems" class="level1">
+<h1>Problems</h1>
+<section id="problem-1" class="level2">
+<h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
+<p>A researcher wants to determine if there is an association between smoking status and the presence of lung disease. The following table summarizes the data collected from a sample of 200 participants:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Smoking Status</th>
+<th>Lung Disease (Yes)</th>
+<th>Lung Disease (No)</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Smoker</td>
+<td>50</td>
+<td>30</td>
+<td>80</td>
+</tr>
+<tr class="even">
+<td>Non Smoker</td>
+<td>20</td>
+<td>100</td>
+<td>120</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td>70</td>
+<td>130</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<p><strong>a.</strong> If we want to determine if there is a significant association between smoking status and the presence of lung disease, what test should be used?</p>
+<p><strong>b.</strong> Carry out the test at <span class="math inline">\(\alpha = 0.05\)</span>. Report the test-statistic and interpret the results.</p>
+<p><strong>c.</strong> Let <span class="math inline">\(X\)</span> represent the number of smokers who develop lung disease in the sample above. Now suppose we randomly select 5 individuals. Find the expected number and variance of smokers with lung disease from the 5 selected.</p>
+<p><strong>d.</strong> Suppose the following summary statistics is obtained of smokers and non-smokers from the sample</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Smoking Status</th>
+<th>Sample Mean Age</th>
+<th>Standard Deviation of Age</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Smoker</td>
+<td>40</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Non Smoker</td>
+<td>45</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<p>Suppose the standard deviation obtained above is representative of their respective populations. Determine if there is a significant difference in mean ages between smokers and non-smokers.</p>
+<p>(<em>Hint: the test statistics for a two-sample z-test is</em> <span class="math inline">\(Z = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1  - \mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}}\)</span>)</p>
+<p><strong>e.</strong> Calculate the relative risk (RR) and odds ratio (OR) for smokers developing lung disease compared to non-smokers.</p>
+</section>
+<section id="problem-2" class="level2">
+<h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
+<p>A study seeks to examine whether gender is associated with being a smoker. The researchers survey a population in the current month. Out of 500 total individuals, they find that there are 200 smokers. Out of all the male participants, 150 were smokers, while 75 were not.</p>
+<p>Find a point estimate and a 95% confidence interval for this point estimate comparing the difference in risk of smoking between male and females. What can we conclude from these results?</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="solution" class="level1">
+<h1>Solution</h1>
+<section id="problem-1-1" class="level2">
+<h2 class="anchored" data-anchor-id="problem-1-1">Problem 1</h2>
 <p>A researcher wants to determine if there is an association between smoking status and the presence of lung disease. The following table summarizes the data collected from a sample of 200 participants:</p>
 <table class="caption-top table">
 <thead>
@@ -134,7 +226,7 @@ window.Quarto = {
 First, we calculate the expected table:</div>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 32%">
+<col style="width: 31%">
 <col style="width: 33%">
 <col style="width: 34%">
 </colgroup>
@@ -208,6 +300,56 @@ We reject the <span class="math inline">\(H_0\)</span> and conclude that their i
 <div class="line-block"><strong>Solution:</strong><br>
 <span class="math display">\[  RR = \frac{50/80}{20/120} = 3.75  \]</span><br>
 <span class="math display">\[  OR = \frac{50\cdot 100}{30 \cdot 20} = 8.333  \]</span></div>
+</section>
+<section id="problem-2-1" class="level2">
+<h2 class="anchored" data-anchor-id="problem-2-1">Problem 2</h2>
+<p>A study seeks to examine whether gender is associated with being a smoker. The researchers survey a population in the current month. Out of 500 total individuals, they find that there are 200 smokers. Out of all the male participants, 150 were smokers, while 75 were not.</p>
+<p>Find a point estimate and a 95% confidence interval for this point estimate comparing the difference in risk of smoking between male and females. What can we conclude from these results?</p>
+<p><strong>Solution:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Male</th>
+<th>Female</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Non-Smokers</strong></td>
+<td>75</td>
+<td>225</td>
+<td>300</td>
+</tr>
+<tr class="even">
+<td><strong>Smokers</strong></td>
+<td>150</td>
+<td>50</td>
+<td>200</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>225</td>
+<td>275</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+\hat{RD}= \frac{150}{225} - \frac{50}{275} = 0.4848
+\]</span></p>
+<p><span class="math display">\[
+\hat{RD} \pm z_{1-0.05/2}*\sqrt{\frac{ac}{n_1^3}+\frac{bd}{n_2^3}}
+= 0.4848 \pm 1.96 * \sqrt{\frac{75*150}{225^3}+\frac{225*50}{275^3}}
+= (0.408, 0.561)
+\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculating in R</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>lwr <span class="ot">&lt;-</span> (<span class="dv">150</span><span class="sc">/</span><span class="dv">225</span> <span class="sc">-</span> <span class="dv">50</span><span class="sc">/</span><span class="dv">275</span>) <span class="sc">-</span> (<span class="fl">1.96</span> <span class="sc">*</span> <span class="fu">sqrt</span>((<span class="dv">75</span><span class="sc">*</span><span class="dv">150</span>)<span class="sc">/</span>(<span class="dv">225</span><span class="sc">^</span><span class="dv">3</span>)<span class="sc">+</span>(<span class="dv">225</span><span class="sc">*</span><span class="dv">50</span>)<span class="sc">/</span>(<span class="dv">275</span><span class="sc">^</span><span class="dv">3</span>)))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>upr <span class="ot">&lt;-</span> (<span class="dv">150</span><span class="sc">/</span><span class="dv">225</span> <span class="sc">-</span> <span class="dv">50</span><span class="sc">/</span><span class="dv">275</span>) <span class="sc">+</span> (<span class="fl">1.96</span> <span class="sc">*</span> <span class="fu">sqrt</span>((<span class="dv">75</span><span class="sc">*</span><span class="dv">150</span>)<span class="sc">/</span>(<span class="dv">225</span><span class="sc">^</span><span class="dv">3</span>)<span class="sc">+</span>(<span class="dv">225</span><span class="sc">*</span><span class="dv">50</span>)<span class="sc">/</span>(<span class="dv">275</span><span class="sc">^</span><span class="dv">3</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
 </section>
 
 </main>
@@ -294,8 +436,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -406,7 +546,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
