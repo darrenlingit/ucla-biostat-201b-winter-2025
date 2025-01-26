@@ -1,0 +1,34 @@
+---
+title: "Discussion Week 4 Problem"
+format: html
+---
+
+**Question:**
+
+A study seeks to examine whether gender is associated with being a smoker. The researchers survey a population in the current month. Out of 500 total individuals, they find that there are 200 smokers. Out of all the male participants, 150 were smokers, while 75 were not.
+
+Find a point estimate and a 95% confidence interval for this point estimate comparing the difference in risk of smoking between male and females. What can we conclude from these results?
+
+**Answer:**
+
+|                 | Male | Female |     |
+|-----------------|------|--------|-----|
+| **Non-Smokers** | 75   | 225    | 300 |
+| **Smokers**     | 150  | 50     | 200 |
+|                 | 225  | 275    | 500 |
+
+$$
+\hat{RD}= \frac{150}{225} - \frac{50}{275} = 0.4848
+$$
+
+$$
+\hat{RD} \pm z_{1-0.05/2}*\sqrt{\frac{ac}{n_1^3}+\frac{bd}{n_2^3}}
+= 0.4848 \pm 1.96 * \sqrt{\frac{75*150}{225^3}+\frac{225*50}{275^3}}
+= (0.408, 0.561)
+$$
+
+```{r}
+# calculating in R
+lwr <- (150/225 - 50/275) - (1.96 * sqrt((75*150)/(225^3)+(225*50)/(275^3)))
+upr <- (150/225 - 50/275) + (1.96 * sqrt((75*150)/(225^3)+(225*50)/(275^3)))
+```
