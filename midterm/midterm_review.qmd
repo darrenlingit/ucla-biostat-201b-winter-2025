@@ -71,6 +71,8 @@ A researcher is studying the association between a new drug and disease remissio
 | Drug    | 50            | 30            | 80    |
 | Placebo | 20            | 40            | 60    |
 
+Using the Mantel-Haenszel method, calculate the common odds ratio across both hospitals. Interpret the result in the context of the study.
+
 \newpage
 
 
