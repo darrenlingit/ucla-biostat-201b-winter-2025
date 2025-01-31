@@ -53,6 +53,8 @@ $$ Provide an interpretation.
 
 What is the relationship between specificity and sensitivity in general?
 
+\newpage
+
 ## Problem 2
 
 A researcher is studying the association between a new drug and disease remission across two different hospitals. The data collected is summarized in the following stratified contingency tables:
@@ -69,19 +71,22 @@ A researcher is studying the association between a new drug and disease remissio
 | Drug    | 50            | 30            | 80    |
 | Placebo | 20            | 40            | 60    |
 
+\newpage
+
+
 ## Problem 3
 
-A researcher is conducting a cohort study to investigate the effect of smoking on lung cancer incidence. The study follows two groups of individuals: Smokers and Non-Smokers. However, since age is a confounding variable, the researcher stratifies the participants into two age groups: Young (≤ 50 years) and Old (\> 50 years).
+A researcher is conducting a cohort study to investigate the effect of smoking on lung cancer incidence. The study follows two groups of individuals: Smokers and Non-Smokers. However, since age is a confounding variable, the researcher stratifies the participants into two age groups: Young ($≤$ 50 years) and Old ($>$ 50 years).
 
 | Age Group    | Smokers (Cases / Total) | Non-Smokers (Cases / Total) |
 |--------------|-------------------------|-----------------------------|
-| Young (≤ 50) | 50 / 5,000              | 20 / 6,000                  |
-| Old (\> 50)  | 200 / 3,000             | 100 / 4,000                 |
+| Young ($≤$ 50) | 50 / 5,000              | 20 / 6,000                  |
+| Old ($>$ 50)  | 200 / 3,000             | 100 / 4,000                 |
 
 Additionally, the researcher uses a standard population with the following age distribution:
 
--   **Young (≤ 50 years):** 7,000 individuals
--   **Old (\> 50 years):** 5,000 individuals
+-   **Young ($≤$ 50 years):** 7,000 individuals
+-   **Old ($>$ 50 years):** 5,000 individuals
 
 ### Part (A)
 
