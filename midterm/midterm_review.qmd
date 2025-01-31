@@ -19,7 +19,7 @@ editor:
 ---
 # Problems
 
-## Problem (1)
+## Problem 1
 
 Researchers are developing a new covid test and would like to see how effective their new test is. Let the number of inviduals who have covid be 110 and of these 90 tested positive with the new test. There were 190 individuals who did not have covid, 170 of them tested negative.
 
@@ -53,4 +53,20 @@ Provide an interpretation.
 ### Part (D)
 
 What is the relationship between specificity and sensitivity in general?
+
+## Problem 2
+
+A researcher is studying the association between a new drug and disease remission across two different hospitals. The data collected is summarized in the following stratified contingency tables:
+
+|         |               |               |       |
+|---------|---------------|---------------|-------|
+|         | Remission (+) | Remission (-) | Total |
+| Drug    | 40            | 20            | 60    |
+| Placebo | 30            | 30            | 60    |
+
+|         |               |               |       |
+|---------|---------------|---------------|-------|
+|         | Remission (+) | Remission (-) | Total |
+| Drug    | 50            | 30            | 80    |
+| Placebo | 20            | 40            | 60    |
 

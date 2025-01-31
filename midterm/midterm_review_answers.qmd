@@ -1,0 +1,107 @@
+---
+title: Midterm Review Answers
+format:
+  html:
+    theme: cosmo
+  pdf:
+    number-sections: false
+editor: 
+  html:
+    theme: cosmo
+    embed-resources: true
+    number-sections: false
+    toc: true
+    toc-depth: 4
+    toc-location: left
+    code-fold: false
+    link-external-icon: true
+    link-external-newwindow: true
+
+---
+
+
+## Problem 2
+
+**Question:**
+
+A researcher is studying the association between a new drug and disease remission across two different hospitals. The data collected is summarized in the following stratified contingency tables:
+
+|         |               |               |       |
+|---------|---------------|---------------|-------|
+|         | Remission (+) | Remission (-) | Total |
+| Drug    | 40            | 20            | 60    |
+| Placebo | 30            | 30            | 60    |
+
+|         |               |               |       |
+|---------|---------------|---------------|-------|
+|         | Remission (+) | Remission (-) | Total |
+| Drug    | 50            | 30            | 80    |
+| Placebo | 20            | 40            | 60    |
+
+
+**Solution:**
+
+To calculate the **Mantel-Haenszel Common Odds Ratio (MH OR)**, we use the formula:
+
+$$
+OR_{MH} = \frac{\sum \frac{a_i d_i}{n_i}}{\sum \frac{b_i c_i}{n_i}}
+$$
+
+where for each stratum $i$:
+
+- $a_i$ = number of exposed cases (Drug & Remission +)
+- $b_i$ = number of exposed non-cases (Drug & Remission -)
+- $c_i$ = number of unexposed cases (Placebo & Remission +)
+- $d_i$ = number of unexposed non-cases (Placebo & Remission -)
+- $n_i$ = total number of observations in the stratum
+
+### Step 1: Extract Data from Each Hospital
+
+For **Hospital 1:**
+
+$$
+a_1 = 40, \quad b_1 = 20, \quad c_1 = 30, \quad d_1 = 30, \quad n_1 = 120
+$$
+
+For **Hospital 2:**
+
+$$
+a_2 = 50, \quad b_2 = 30, \quad c_2 = 20, \quad d_2 = 40, \quad n_2 = 140
+$$
+
+### Step 2: Compute the Mantel-Haenszel Components
+
+$$
+\sum \frac{a_i d_i}{n_i} = \frac{(40 \times 30)}{120} + \frac{(50 \times 40)}{140}
+$$
+
+$$
+= \frac{1200}{120} + \frac{2000}{140}
+$$
+
+$$
+= 10 + 14.29 = 24.29
+$$
+
+$$
+\sum \frac{b_i c_i}{n_i} = \frac{(20 \times 30)}{120} + \frac{(30 \times 20)}{140}
+$$
+
+$$
+= \frac{600}{120} + \frac{600}{140}
+$$
+
+$$
+= 5 + 4.29 = 9.29
+$$
+
+### Step 3: Compute the Mantel-Haenszel Common Odds Ratio
+
+$$
+OR_{MH} = \frac{24.29}{9.29} = 2.61
+$$
+
+### Step 4: Interpretation
+
+Since the **Mantel-Haenszel common odds ratio** is **2.61**, this suggests that across both hospitals, patients receiving the drug have **2.61 times higher odds** of experiencing remission compared to those receiving the placebo. This indicates a **strong positive association** between the drug and disease remission.
+
