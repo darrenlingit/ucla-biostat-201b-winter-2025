@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -29,10 +29,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="midterm_review_answers_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="midterm_review_answers_files/libs/quarto-html/anchor.min.js"></script>
 <link href="midterm_review_answers_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="midterm_review_answers_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="midterm_review_answers_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="midterm_review_answers_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="midterm_review_answers_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="midterm_review_answers_files/libs/bootstrap/bootstrap-81e35ebdb4125010edbabe6010586085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="midterm_review_answers_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -196,6 +196,72 @@ OR_{MH} = \frac{24.29}{9.29} = 2.61
 <p>Since the <strong>Mantel-Haenszel common odds ratio</strong> is <strong>2.61</strong>, this suggests that across both hospitals, patients receiving the drug have <strong>2.61 times higher odds</strong> of experiencing remission compared to those receiving the placebo. This indicates a <strong>strong positive association</strong> between the drug and disease remission.</p>
 </section>
 </section>
+<section id="problem-3" class="level2">
+<h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
+<p>A researcher is conducting a cohort study to investigate the effect of smoking on lung cancer incidence. The study follows two groups of individuals: Smokers and Non-Smokers. However, since age is a confounding variable, the researcher stratifies the participants into two age groups: Young (≤ 50 years) and Old (&gt; 50 years).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Age Group</th>
+<th>Smokers (Cases / Total)</th>
+<th>Non-Smokers (Cases / Total)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Young (≤ 50)</td>
+<td>50 / 5,000</td>
+<td>20 / 6,000</td>
+</tr>
+<tr class="even">
+<td>Old (&gt; 50)</td>
+<td>200 / 3,000</td>
+<td>100 / 4,000</td>
+</tr>
+</tbody>
+</table>
+<p>Additionally, the researcher uses a standard population with the following age distribution:</p>
+<ul>
+<li><strong>Young (≤ 50 years):</strong> 7,000 individuals</li>
+<li><strong>Old (&gt; 50 years):</strong> 5,000 individuals</li>
+</ul>
+<section id="part-a" class="level3">
+<h3 class="anchored" data-anchor-id="part-a">Part (A)</h3>
+<p>Compute the age-stratified risk of lung cancer in both smokers and non-smokers.</p>
+<p><strong>Solution:</strong> The risk of lung cancer in each stratum is given by:</p>
+<p>For Smokers:</p>
+<ul>
+<li><p>Young (≤ 50 years): <span class="math display">\[\hat{p}_{smoker, young} = \frac{50}{500}\]</span></p></li>
+<li><p>Old (&gt; 50 years): <span class="math display">\[\hat{p}_{smoker, old} = \frac{200}{3000} = 0.0667\]</span></p></li>
+</ul>
+<p>For Non-Smokers:</p>
+<ul>
+<li><p>Young (≤ 50 years): <span class="math display">\[\hat{p}_{nonsmoker, young} = \frac{20}{6000} = 0.0033\]</span></p></li>
+<li><p>Old (&gt; 50 years): <span class="math display">\[\hat{p}_{nonsmoker, old} = \frac{100}{4000} = 0.025\]</span></p></li>
+</ul>
+</section>
+<section id="part-b" class="level3">
+<h3 class="anchored" data-anchor-id="part-b">Part (B)</h3>
+<p>Perform direct standardization to calculate the adjusted risk for both smokers and non-smokers using the standard population.</p>
+<p><strong>Solution:</strong> We first define the standard reference distribution: <span class="math display">\[t_{young} = 7000, \;\; t_{old} = 5000\]</span> For Smokers: <span class="math display">\[ \hat{p}_{smoker} = \frac{t_{young}\cdot \hat{p}_{young, smoker} + t_{old}\cdot \hat{p}_{old, smoker}}{t_{young} + t_{old}} = 0.0336 \]</span></p>
+<p>For Non-Smokers:</p>
+<p><span class="math display">\[\hat{p}_{nonsmoker} = \frac{t_{young}\cdot \hat{p}_{young, nonsmoker} + t_{old}\cdot \hat{p}_{old, nonsmoker}}{t_{young} + t_{old}} = 0.0123\]</span></p>
+</section>
+<section id="part-c" class="level3">
+<h3 class="anchored" data-anchor-id="part-c">Part (C)</h3>
+<p>Compute the adjusted risk difference (RD) and the adjusted risk ratio (RR) between smokers and non-smokers.</p>
+<p><strong>Solution:</strong></p>
+<p>Risk Difference is defined as <span class="math display">\[\hat{RD} = \hat{p}_{smoker} - \hat{p}_{nonsmoker} = 0.0213.\]</span></p>
+<p>The Risk Ratio is defined as <span class="math display">\[\hat{RR} = \frac{\hat{p}_{smoker}}{\hat{p}_{nonsmoker}} = 2.73.\]</span></p>
+</section>
+<section id="part-d" class="level3">
+<h3 class="anchored" data-anchor-id="part-d">Part (D)</h3>
+<p>Does smoking increase the risk of lung cancer after adjusting for age?</p>
+<p><strong>Solution:</strong></p>
+<p>Smokers are 2.73 times more likely to develop lung cancer than non-smokers, even after adjusting for age.</p>
+<p>The risk difference of 21.3 per 1,000 suggests that if smoking were eliminated, about 21.3 cases per 1,000 individuals could potentially be prevented in a similar population.</p>
+</section>
+</section>
 
 </main>
 <!-- /main column -->
@@ -281,6 +347,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -391,6 +459,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

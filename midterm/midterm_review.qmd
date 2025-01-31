@@ -15,40 +15,39 @@ editor:
     code-fold: false
     link-external-icon: true
     link-external-newwindow: true
-
 ---
+
 # Problems
 
 ## Problem 1
 
 Researchers are developing a new covid test and would like to see how effective their new test is. Let the number of inviduals who have covid be 110 and of these 90 tested positive with the new test. There were 190 individuals who did not have covid, 170 of them tested negative.
 
-
 ### Part(A)
+
 Arrange the data in a contingency table.
 
-| Test Diagnosis     | Covid Status (+)   | Covid Status (-)  | 
-|--------------------|--------------------|-------------------|
-| Test Positive = (+)|                    |                   | 
-| Test Positive = (-)|                    |                   |
-| **Total**          |  110               |    190            |
-
+| Test Diagnosis      | Covid Status (+) | Covid Status (-) |
+|---------------------|------------------|------------------|
+| Test Positive = (+) |                  |                  |
+| Test Positive = (-) |                  |                  |
+| **Total**           | 110              | 190              |
 
 ### Part (B)
+
 What is the sensitivity of the new test?
 
 $$
 P( \text{Disease} = + | \text{Test} = + ) = 
-$$
-Provide an interpretation.
+$$ Provide an interpretation.
 
 ### Part (C)
+
 What is the specificty of the new test?
 
 $$
 P( \text{Disease} = - | \text{Test} = - ) = 
-$$
-Provide an interpretation.
+$$ Provide an interpretation.
 
 ### Part (D)
 
@@ -70,3 +69,32 @@ A researcher is studying the association between a new drug and disease remissio
 | Drug    | 50            | 30            | 80    |
 | Placebo | 20            | 40            | 60    |
 
+## Problem 3
+
+A researcher is conducting a cohort study to investigate the effect of smoking on lung cancer incidence. The study follows two groups of individuals: Smokers and Non-Smokers. However, since age is a confounding variable, the researcher stratifies the participants into two age groups: Young (≤ 50 years) and Old (\> 50 years).
+
+| Age Group    | Smokers (Cases / Total) | Non-Smokers (Cases / Total) |
+|--------------|-------------------------|-----------------------------|
+| Young (≤ 50) | 50 / 5,000              | 20 / 6,000                  |
+| Old (\> 50)  | 200 / 3,000             | 100 / 4,000                 |
+
+Additionally, the researcher uses a standard population with the following age distribution:
+
+-   **Young (≤ 50 years):** 7,000 individuals
+-   **Old (\> 50 years):** 5,000 individuals
+
+### Part (A)
+
+Compute the age-stratified risk of lung cancer in both smokers and non-smokers.
+
+### Part (B)
+
+Perform direct standardization to calculate the adjusted risk for both smokers and non-smokers using the standard population.
+
+### Part (C)
+
+Compute the adjusted risk difference (RD) and the adjusted risk ratio (RR) between smokers and non-smokers.
+
+### Part (D)
+
+Does smoking increase the risk of lung cancer after adjusting for age?
